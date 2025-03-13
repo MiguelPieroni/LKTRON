@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-Ktron - Especialistas en Servicios Eléctricos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" href="./img/L-Ktron_favicon_96x96_negro.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/L-Ktron_logo_200x60.png" alt="L-Ktron" class="logo-img">
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#servicios"><i class="fas fa-building"></i> Servicios</a></li>
+                <li><a href="./nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <!-- Contenedor de medios flexible -->
+        <div class="hero-media-container">
+            <!-- Medios para escritorio (solo uno de estos estaría sin comentar) -->
+            <div class="desktop-media">
+                <!-- Opción 1: Imagen -->
+                <img src="./img/hero_banner_desktop_1600x800.png" alt="Fondo del hero">
+                
+                <!-- Opción 2: GIF -->
+                <!-- <img src="ruta/a/animacion-escritorio.gif" alt="Fondo del hero"> -->
+                
+                <!-- Opción 3: Video -->
+                <!-- <video autoplay muted loop playsinline>
+                    <source src="ruta/a/video-escritorio.mp4" type="video/mp4">
+                </video> -->
+            </div>
+            
+            <!-- Medios para móvil (solo uno de estos estaría sin comentar) -->
+            <div class="mobile-media">
+                <!-- Opción 1: Imagen -->
+                <img src="./img/hero_banner_mobile_1080x1920.png" alt="Fondo del hero">
+                
+                <!-- Opción 2: GIF -->
+                <!-- <img src="ruta/a/animacion-movil.gif" alt="Fondo del hero"> -->
+                
+                <!-- Opción 3: Video -->
+                <!-- <video autoplay muted loop playsinline>
+                    <source src="ruta/a/video-movil.mp4" type="video/mp4">
+                </video> -->
+            </div>
+        </div>
+        
+        <!-- Su contenido de superposición existente permanece sin cambios -->
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal-element">ESPECIALISTAS EN<br>SERVICIOS ELÉCTRICOS</h1>
+                    <p class="reveal-element">Soluciones profesionales para hogares y empresas</p>
+                    <a href="#contacto" class="btn reveal-element">Solicitar Presupuesto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Nosotros -->
+
+    <!-- Servicios -->
+    <section class="services section-padding" id="servicios">
+        <!-- Servicio 1 -->
+        <div class="service-item container">
+            <div class="service-description">
+                <h2 class="reveal-element">Instalaciones Eléctricas Residenciales</h2>
+                <p class="reveal-element">Realizamos todo tipo de instalaciones eléctricas para su hogar, cumpliendo con las normas de seguridad vigentes. Instalación de circuitos, cuadros eléctricos, iluminación y más.</p>
+            </div>
+            <div class="service-image reveal-element">
+                <img src="./img/servicios_600x380_residenciales.png" alt="Instalaciones eléctricas residenciales">
+            </div>
+        </div>
+            <hr>
+        <!-- Servicio 2 -->
+        <div class="service-item container">
+            <div class="service-image reveal-element">
+                <img src="./img/servicios_600x380_comerciales.png" alt="Instalaciones eléctricas comerciales">
+            </div>
+            <div class="service-description">
+                <h2 class="reveal-element">Instalaciones Eléctricas Comerciales</h2>
+                <p class="reveal-element">Soluciones eléctricas para locales comerciales, oficinas y establecimientos. Diseñamos e implementamos sistemas eléctricos eficientes que se adaptan a las necesidades específicas de su negocio.</p>
+            </div>
+        </div>
+        <hr>
+        <!-- Servicio 3 -->
+        <div class="service-item container">
+            <div class="service-description">
+                <h2 class="reveal-element">Mantenimiento Preventivo</h2>
+                <p class="reveal-element">Revisiones periódicas de sus instalaciones eléctricas para prevenir fallas y garantizar su correcto funcionamiento. Identificamos y corregimos problemas potenciales antes de que ocurran.</p>
+            </div>
+            <div class="service-image reveal-element">
+                <img src="./img/servicios_600x380_mantenimiento.png" alt="Mantenimiento eléctrico preventivo">
+            </div>
+        </div>
+        <hr>
+        <!-- Servicio 4 -->
+        <div class="service-item container">
+            <div class="service-image reveal-element">
+                <img src="./img/servicios_600x380_reparaciones.png" alt="Reparaciones eléctricas">
+            </div>
+            <div class="service-description">
+                <h2 class="reveal-element">Reparaciones Eléctricas</h2>
+                <p class="reveal-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo esse in similique, rem sint adipisci. Tempore nemo ipsum odio aliquam voluptatum quos cumque, a inventore deleniti provident aliquid eligendi doloremque praesentium doloribus vitae minus nulla quaerat ipsam quam commodi!</p>
+            </div>
+        </div>
+        <!-- Servicio 5 -->
+        <!-- <div class="service-item container">
+            <div class="service-description">
+                <h2 class="reveal-element">Instalación de Sistemas de Energía Renovable</h2>
+                <p class="reveal-element">Instalamos sistemas de energía solar fotovoltaica y otras soluciones renovables para reducir su consumo eléctrico y contribuir al cuidado del medio ambiente.</p>
+            </div>
+            <div class="service-image reveal-element">
+                <img src="https://dummyimage.com/600X380/007bff/ffffff&text=600X380" alt="Instalación de paneles solares">
+            </div>
+        </div> -->
+    </section>
+
+<!-- Proyectos/Casos de Éxito 
+<section class="projects section-padding" id="proyectos">
+    <div class="container">
+        <h2 class="section-title reveal-element">PROYECTOS REALIZADOS</h2>
+        
+        <div class="projects-container">
+            <div class="projects-grid">
+                <div class="project-item reveal-element">
+                    <img src="./img/proyectos_600x380_1.png" alt="Proyecto residencial">
+                    <div class="project-overlay">
+                        <h3>RESIDENCIAL</h3>
+                    </div>
+                </div>
+                <div class="project-item reveal-element">
+                    <img src="./img/proyectos_600x380_2.png" alt="Proyecto comercial">
+                    <div class="project-overlay">
+                        <h3>COMERCIAL</h3>
+                    </div>
+                </div>
+                <div class="project-item reveal-element">
+                    <img src="./img/proyectos_600x380_3.png" alt="Proyecto industrial">
+                    <div class="project-overlay">
+                        <h3>INDUSTRIAL</h3>
+                    </div>
+                </div>
+                <div class="project-item reveal-element">
+                    <img src="./img/proyectos_600x380_4.png" alt="Iluminación">
+                    <div class="project-overlay">
+                        <h3>ILUMINACIÓN</h3>
+                    </div>
+                </div>
+                <div class="project-item reveal-element">
+                    <img src="./img/proyectos_600x380_5.png" alt="Energía renovable">
+                    <div class="project-overlay">
+                        <h3>ENERGÍA RENOVABLE</h3>
+                    </div>
+                </div>
+                <div class="project-item reveal-element">
+                    <img src="./img/proyectos_600x380_6.png" alt="Remodelación">
+                    <div class="project-overlay">
+                        <h3>REMODELACIÓN</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-indicators"></div>
+                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Contacto -->
+<section class="contact section-padding" id="contacto">
+    <div class="container">
+        <div class="contact-container">
+            <!-- Columna izquierda: Información de contacto -->
+            <div class="contact-left">
+                <h2 class="section-title">Contáctenos</h2>
+                <p class="contact-intro">Estamos disponibles para atender sus consultas y brindarle un presupuesto sin compromiso.</p>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Teléfono</h3>
+                            <p>+54 11 1234 5678</p>
+                        <!--    <a href="tel:+541112345678" class="info-link">Llamar ahora</a> -->
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>info@electroservice.com</p>
+                            <a href="mailto:info@electroservice.com" class="info-link">Enviar email</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horario</h3>
+                            <p><b>Lunes a Viernes: 8:00 - 18:00</b></p>
+                            <p><b>Sábados: 9:00 - 13:00</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Columna derecha: Formulario -->
+            <div class="contact-right">
+                <div class="form-container">
+                    <h3 class="form-title">Envíe su consulta</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="nombre" placeholder="Nombre" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" name="telefono" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <select name="zona" required>
+                                    <option value="" disabled selected>Seleccione su zona</option>
+                                    <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+                                    <!-- <option value="Zona Norte">Zona Norte GBA</option> -->
+                                    <option value="Zona Oeste">Zona Oeste GBA</option>
+                                    <option value="Zona Sur">Zona Sur GBA</option>
+                                    <!-- <option value="La Plata">La Plata</option> -->
+                                    <option value="Otra">Otra localidad | Aclarar localidad en mensaje</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon textarea-with-icon">
+                            <!--     <i class="fas fa-comment"></i> -->
+                                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- reCAPTCHA input (comentado) -->
+                        <!-- <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response"> -->
+                        
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Logo section - común para ambas versiones -->
+            <div class="footer-logo">
+                <h3>L-Ktron</h3>
+                <p>Soluciones eléctricas profesionales</p>
+            </div>
+            
+            <!-- Versión DESKTOP de Enlaces (sin flechas) -->
+            <div class="footer-desktop footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Versión DESKTOP de Servicios (sin flechas) -->
+            <div class="footer-desktop footer-services">
+                <h4>Servicios</h4>
+                <ul>
+                    <li>Instalaciones Residenciales</li>
+                    <li>Instalaciones Comerciales</li>
+                    <li>Mantenimiento Preventivo</li>
+                    <li>Reparaciones Eléctricas</li>
+                </ul>
+            </div>
+            
+            <!-- Versión MOBILE de Enlaces (con flechas) -->
+            <div class="footer-mobile footer-links footer-collapsible">
+                <h4 class="footer-toggle">
+                    Enlaces <i class="fas fa-chevron-down"></i>
+                </h4>
+                <ul class="collapsible-content">
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Versión MOBILE de Servicios (con flechas) -->
+            <div class="footer-mobile footer-services footer-collapsible">
+                <h4 class="footer-toggle">
+                    Servicios <i class="fas fa-chevron-down"></i>
+                </h4>
+                <ul class="collapsible-content">
+                    <li>Instalaciones Residenciales</li>
+                    <li>Instalaciones Comerciales</li>
+                    <li>Mantenimiento Preventivo</li>
+                    <li>Reparaciones Eléctricas</li>
+                </ul>
+            </div>
+            
+            <!-- Sección de redes sociales - común para ambas versiones -->
+            <div class="footer-social">
+                <h4>Seguinos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 L-Ktron. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/5491112345678" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Font Awesome para iconos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=TU_CLAVE_SITIO"></script> -->
+    <!-- Script principal -->
+    <script src="script.js"></script>
+    <!-- Implementación de reCAPTCHA v3 (comentado hasta publicación) -->
+
+<!--<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('TU_CLAVE_SITIO', {action: 'submit'}).then(function(token) {
+        document.getElementById('g-recaptcha-response').value = token;
+    });
+});
+        </script> -->
+
+    <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Obtener datos del formulario
+    const formData = {
+        nombre: this.querySelector('[name="nombre"]').value,
+        email: this.querySelector('[name="email"]').value,
+        telefono: this.querySelector('[name="telefono"]').value,
+        zona: this.querySelector('[name="zona"]').value,
+        mensaje: this.querySelector('[name="mensaje"]').value
+    };
+    
+    // IMPORTANTE: Actualice esta URL con la nueva URL de su script desplegado
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxG68nQElWJ14DrJ9ob2urUX_Ngv_2WsP7xMO5FxQ4Yv1wC2m8xvLKWv3ybr_-OlYfF/exec';
+    
+    // Deshabilitar el botón de envío para evitar múltiples envíos
+    const submitButton = this.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.textContent = 'Enviando...';
+    
+    // Enviar datos
+    fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        console.log('Éxito:', response);
+        window.location.href = 'gracias.html';
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        
+        // Método alternativo con iframe
+        submitFormViaIframe(formData, scriptURL);
+    })
+    .finally(() => {
+        // Rehabilitar el botón después de 3 segundos (por si falla)
+        setTimeout(() => {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Enviar Mensaje';
+        }, 3000);
+    });
+});
+
+// Función de respaldo usando iframe
+function submitFormViaIframe(formData, scriptURL) {
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+    
+    const queryString = Object.keys(formData)
+        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(formData[key]))
+        .join('&');
+    
+    iframe.src = scriptURL + '?' + queryString;
+    
+    // Redirigir después de un breve retraso
+    setTimeout(function() {
+        window.location.href = 'gracias.html';
+    }, 1500);
+}
+        </script>
+</body>
+</html>
