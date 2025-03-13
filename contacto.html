@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navegación -->
+    <!-- Barra de navegacion -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
@@ -38,7 +38,6 @@
 <section class="contact section-padding" id="contacto">
     <div class="container">
         <div class="contact-container">
-            <!-- Columna izquierda: Información de contacto -->
             <div class="contact-left">
                 <h2 class="section-title">Contáctenos</h2>
                 <p class="contact-intro">Estamos disponibles para atender sus consultas y brindarle un presupuesto sin compromiso.</p>
@@ -79,7 +78,7 @@
                 </div>
             </div>
             
-            <!-- Columna derecha: Formulario -->
+            <!-- Formulario -->
             <div class="contact-right">
                 <div class="form-container">
                     <h3 class="form-title">Envíe su consulta</h3>
@@ -127,7 +126,7 @@
                             </div>
                         </div>
 
-                        <!-- reCAPTCHA input (comentado) -->
+                        <!-- reCAPTCHA input -->
                         <!-- <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response"> -->
                         
                         <button type="submit" class="btn">
@@ -144,13 +143,12 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <!-- Logo section - común para ambas versiones -->
             <div class="footer-logo">
                 <h3>L-Ktron</h3>
                 <p>Soluciones eléctricas profesionales</p>
             </div>
             
-            <!-- Versión DESKTOP de Enlaces (sin flechas) -->
+            <!-- Links Footer desktop -->
             <div class="footer-desktop footer-links">
                 <h4>Enlaces</h4>
                 <ul>
@@ -161,7 +159,7 @@
                 </ul>
             </div>
             
-            <!-- Versión DESKTOP de Servicios (sin flechas) -->
+            <!-- Servicio Footer desktop -->
             <div class="footer-desktop footer-services">
                 <h4>Servicios</h4>
                 <ul>
@@ -172,7 +170,7 @@
                 </ul>
             </div>
             
-            <!-- Versión MOBILE de Enlaces (con flechas) -->
+            <!-- Links footer mobile -->
             <div class="footer-mobile footer-links footer-collapsible">
                 <h4 class="footer-toggle">
                     Enlaces <i class="fas fa-chevron-down"></i>
@@ -185,7 +183,7 @@
                 </ul>
             </div>
             
-            <!-- Versión MOBILE de Servicios (con flechas) -->
+            <!-- servicios footer mobile -->
             <div class="footer-mobile footer-services footer-collapsible">
                 <h4 class="footer-toggle">
                     Servicios <i class="fas fa-chevron-down"></i>
@@ -198,7 +196,7 @@
                 </ul>
             </div>
             
-            <!-- Sección de redes sociales - común para ambas versiones -->
+            <!-- redes sociales -->
             <div class="footer-social">
                 <h4>Seguinos</h4>
                 <div class="social-icons">
@@ -215,7 +213,7 @@
     </div>
 </footer>
 
-    <!-- Botón de WhatsApp flotante -->
+    <!-- wsp flotante -->
     <a href="https://wa.me/5491112345678" class="whatsapp-btn" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -225,7 +223,7 @@
     <!-- <script src="https://www.google.com/recaptcha/api.js?render=TU_CLAVE_SITIO"></script> -->
     <!-- Script principal -->
     <script src="script.js"></script>
-    <!-- Implementación de reCAPTCHA v3 (comentado hasta publicación) -->
+    <!-- Implementación de reCAPTCHA v3 -->
 
 <!--<script>
 grecaptcha.ready(function() {
@@ -239,7 +237,7 @@ grecaptcha.ready(function() {
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Obtener datos del formulario
+    // Obtener datos del formulario google sheets
     const formData = {
         nombre: this.querySelector('[name="nombre"]').value,
         email: this.querySelector('[name="email"]').value,
@@ -248,10 +246,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         mensaje: this.querySelector('[name="mensaje"]').value
     };
     
-    // IMPORTANTE: Actualice esta URL con la nueva URL de su script desplegado
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxG68nQElWJ14DrJ9ob2urUX_Ngv_2WsP7xMO5FxQ4Yv1wC2m8xvLKWv3ybr_-OlYfF/exec';
+    // url del script de Google Apps Script
+    const scriptURL = 'sin url por seguridad';
     
-    // Deshabilitar el botón de envío para evitar múltiples envíos
+    // Deshabilitar el botón de envío
     const submitButton = this.querySelector('button[type="submit"]');
     submitButton.disabled = true;
     submitButton.textContent = 'Enviando...';
