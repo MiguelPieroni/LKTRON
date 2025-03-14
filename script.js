@@ -410,3 +410,71 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Inicializar los elementos FAQ desplegables
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener todos los elementos de pregunta
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    // Añadir listener de eventos a cada pregunta
+    faqQuestions.forEach(function(question) {
+        question.addEventListener('click', function() {
+            // Encontrar el elemento padre (faq-item)
+            const faqItem = this.parentElement;
+            
+            // Alternar la clase 'active' en el faq-item
+            faqItem.classList.toggle('active');
+            
+            // Encontrar el elemento de respuesta
+            const answer = faqItem.querySelector('.faq-answer');
+            
+            // Si está activo, expandir la respuesta
+            if (faqItem.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            } else {
+                // Si no está activo, colapsar la respuesta
+                answer.style.maxHeight = '0';
+            }
+        });
+    });
+});
+
+// Función para manejar el campo de otra localidad
+document.addEventListener('DOMContentLoaded', function() {
+    const seleccionZona = document.getElementById('seleccionZona');
+    const otraLocalidadContainer = document.getElementById('otraLocalidadContainer');
+    const otraLocalidadInput = document.getElementById('otraLocalidad');
+    
+    if (seleccionZona && otraLocalidadContainer && otraLocalidadInput) {
+        // Al cambiar la selección
+        seleccionZona.addEventListener('change', function() {
+            if (seleccionZona.value === 'otra') {
+                // Mostrar campo para escribir localidad
+                otraLocalidadContainer.style.display = 'block';
+                otraLocalidadInput.required = true;
+                
+                // Efecto suave de aparición
+                otraLocalidadContainer.style.opacity = '0';
+                setTimeout(function() {
+                    otraLocalidadContainer.style.transition = 'opacity 0.3s ease';
+                    otraLocalidadContainer.style.opacity = '1';
+                }, 10);
+            } else {
+                // Ocultar campo
+                otraLocalidadContainer.style.display = 'none';
+                otraLocalidadInput.required = false;
+            }
+        });
+        
+        // Manejar envío del formulario
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                if (seleccionZona.value === 'otra' && !otraLocalidadInput.value.trim()) {
+                    event.preventDefault();
+                    alert('Por favor, ingrese su localidad');
+                }
+            });
+        }
+    }
+});

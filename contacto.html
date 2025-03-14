@@ -27,7 +27,7 @@
             <ul class="nav-menu">
                 <li><a href="./index.html#servicios"><i class="fas fa-building"></i> Servicios</a></li>
                 <li><a href="./nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
-                <li><a href="./index.html#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+                <!-- <li><a href="./index.html#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a></li> -->
                 <li><a href="./index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
             </ul>
         </div>
@@ -82,7 +82,7 @@
             <div class="contact-right">
                 <div class="form-container">
                     <h3 class="form-title">Envíe su consulta</h3>
-                    <form id="contactForm" class="contact-form">
+                    <form id="contactForm" class="contact-form" action="procesar-formulario.php" method="POST">
                         <div class="form-group">
                             <div class="input-with-icon">
                                 <i class="fas fa-user"></i>
@@ -107,27 +107,40 @@
                         <div class="form-group">
                             <div class="input-with-icon">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <select name="zona" required>
+                                <select name="zona" id="seleccionZona" required>
                                     <option value="" disabled selected>Seleccione su zona</option>
                                     <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
-                                    <option value="Zona Norte">Zona Norte GBA</option>
-                                    <option value="Zona Oeste">Zona Oeste GBA</option>
-                                    <option value="Zona Sur">Zona Sur GBA</option>
-                                    <option value="La Plata">La Plata</option>
-                                    <option value="Otra">Otra localidad</option>
+                                    <option value="Lomas">Lomas de Zamora, Temperley, Banfield, Turdera</option>
+                                    <option value="Adrogue">Adrogué, Burzaco, Longchamps, Glew</option>
+                                    <option value="Lanus">Lanús, Gerli, Monte Grande</option>
+                                    <option value="Avellaneda">Avellaneda, Wilde, Don Bosco</option>
+                                    <option value="Quilmes">Quilmes, Bernal, Solano, Ezpeleta</option>
+                                    <option value="Ezeiza">Ezeiza, Canning, Luis Guillón</option>
+                                    <option value="Varela">Florencio Varela, Claypole, Rafael Calzada</option>
+                                    <option value="Hudson">Hudson, Berazategui, Guernica</option>
+                                    <option value="otra">Otra localidad</option>
                                 </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Campo de entrada para otra localidad (oculto por defecto) -->
+                        <div class="form-group" id="otraLocalidadContainer" style="display: none;">
+                            <div class="input-with-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" name="otraLocalidad" id="otraLocalidad" placeholder="Escriba su localidad" />
                             </div>
                         </div>
                         
                         <div class="form-group">
                             <div class="input-with-icon textarea-with-icon">
-                            <!--     <i class="fas fa-comment"></i> -->
                                 <textarea name="mensaje" placeholder="Mensaje" required></textarea>
                             </div>
                         </div>
-
-                        <!-- reCAPTCHA input -->
-                        <!-- <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response"> -->
+                        
+                        <!-- Campo oculto anti-spam (honeypot) -->
+                        <div style="display:none;">
+                            <input type="text" name="website" tabindex="-1" autocomplete="off">
+                        </div>
                         
                         <button type="submit" class="btn">
                             <i class="fas fa-paper-plane"></i> Enviar Mensaje
@@ -152,9 +165,10 @@
             <div class="footer-desktop footer-links">
                 <h4>Enlaces</h4>
                 <ul>
+                    <li><a href="./preguntas-frecuentes.html">Preguntas frecuentes</a></li>
                     <li><a href="./index.html#servicios">Servicios</a></li>
                     <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./index.html#proyectos">Proyectos</a></li>
+                    <!-- <li><a href="./index.html#proyectos">Proyectos</a></li> -->
                     <li><a href="./index.html#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -176,9 +190,10 @@
                     Enlaces <i class="fas fa-chevron-down"></i>
                 </h4>
                 <ul class="collapsible-content">
+                    <li><a href="./preguntas-frecuentes.html">Preguntas frecuentes</a></li>
                     <li><a href="./index.html#servicios">Servicios</a></li>
                     <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./index.html#proyectos">Proyectos</a></li>
+                    <!-- <li><a href="./index.html#proyectos">Proyectos</a></li> -->
                     <li><a href="./index.html#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -233,7 +248,7 @@ grecaptcha.ready(function() {
 });
         </script> -->
 
-    <script>
+<!-- <script>
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
@@ -298,6 +313,6 @@ function submitFormViaIframe(formData, scriptURL) {
         window.location.href = 'gracias.html';
     }, 1500);
 }
-        </script>
+        </script> -->
 </body>
 </html>
